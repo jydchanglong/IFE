@@ -14,12 +14,22 @@
 <script type="text/javascript">
 
 (function() {
-  /*    
-  在注释下方写下代码
-  给按钮button绑定一个点击事件
-  在事件处理函数中
-  获取aqi-input输入的值，并显示在aqi-display中
-  */
+	/*    
+	在注释下方写下代码
+	给按钮button绑定一个点击事件
+	在事件处理函数中
+	 获取aqi-input输入的值，并显示在aqi-display中
+	*/
+	
+ 	/* 获取页面元素 */
+	var input = document.getElementById('aqi-input');
+	var btn = document.getElementById("button");
+	var output = document.getElementById("aqi-display");
+	
+	// 给按钮绑定事件
+	btn.onclick = function(e) {
+		output.innerText = input.value;
+	}
 
 })();
 
